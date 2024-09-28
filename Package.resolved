@@ -1,0 +1,42 @@
+{
+  "originHash" : "980df61daeaae5d225ae996a8a100e04aae8d8fc7d6b995761b69a17fb5f0e08",
+  "pins" : [
+    {
+      "identity" : "purchases-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RevenueCat/purchases-ios.git",
+      "state" : {
+        "revision" : "10a9f1d167b5e0cec5c1186eda04f7f36e0a06f3",
+        "version" : "5.4.0"
+      }
+    },
+    {
+      "identity" : "sendabledictionary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftfulThinking/SendableDictionary.git",
+      "state" : {
+        "revision" : "87eca8178bb0b64a2f1a6191ac42b2e73620db07",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swiftfullogging",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftfulThinking/SwiftfulLogging.git",
+      "state" : {
+        "revision" : "65f321ae99d6380e01e7d103ca9c3fd2292545c4",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "swiftfulpurchasing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftfulThinking/SwiftfulPurchasing.git",
+      "state" : {
+        "revision" : "a1bf8af63249c7e2e6ca129f4dd72edabd566a77",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
