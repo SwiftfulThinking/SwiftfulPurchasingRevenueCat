@@ -8,9 +8,9 @@ See documentation in the parent repo: https://github.com/SwiftfulThinking/Swiftf
 ```swift
 // Example
 #if DEBUG
-let logger = PurchaseManager(service: MockPurchaseService(activeEntitlements: []))
+let purchaseManager = PurchaseManager(service: MockPurchaseService(activeEntitlements: []))
 #else
-let logger = PurchaseManager(service: RevenueCatPurchaseService(apiKey: revenueCatApiKey, productIds: allProductIds, logLevel: .warn))
+let purchaseManager = PurchaseManager(service: RevenueCatPurchaseService(apiKey: revenueCatApiKey, productIds: allProductIds, logLevel: .warn))
 #endif
 ```
 
