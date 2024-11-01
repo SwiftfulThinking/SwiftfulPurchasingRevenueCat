@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SwiftfulThinking/SwiftfulPurchasing.git",
       "state" : {
-        "revision" : "a1bf8af63249c7e2e6ca129f4dd72edabd566a77",
-        "version" : "1.0.0"
+        "revision" : "ca385a7265e132a77ffee671269b9753ee867337",
+        "version" : "1.0.1"
       }
     }
   ],
