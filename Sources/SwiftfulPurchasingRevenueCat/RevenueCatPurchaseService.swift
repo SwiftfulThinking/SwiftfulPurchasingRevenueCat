@@ -3,11 +3,8 @@ import RevenueCat
 import SwiftfulPurchasing
 
 public struct RevenueCatPurchaseService: PurchaseService {
-    let productIds: [String]
 
-    public init(apiKey: String, productIds: [String], logLevel: LogLevel = .warn) {
-        self.productIds = productIds
-
+    public init(apiKey: String, logLevel: LogLevel = .warn) {
         Purchases.logLevel = logLevel
         Purchases.configure(withAPIKey: apiKey)
         Purchases.shared.attribution.collectDeviceIdentifiers()
@@ -24,7 +21,7 @@ public struct RevenueCatPurchaseService: PurchaseService {
         }
     }
 
-    public func getAvailableProducts() async throws -> [AnyProduct] {
+    public func getProducts(productIds: [String]) async throws -> [AnyProduct] {
         let products = await Purchases.shared.products(productIds)
         return products.map({ AnyProduct(revenueCatProduct: $0) })
     }
