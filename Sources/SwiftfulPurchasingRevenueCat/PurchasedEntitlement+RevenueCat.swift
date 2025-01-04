@@ -17,6 +17,7 @@ extension PurchasedEntitlement {
 
     init(entitlement: EntitlementInfo) {
         self.init(
+            id: entitlement.id,
             productId: entitlement.productIdentifier,
             expirationDate: entitlement.expirationDate,
             isActive: entitlement.isActive,
